@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@id/konversiLabel">
 
         <RadioButton
-            android:id="@+id/fahrenheitRadioButton"
+            android:id="@+id/FahrenheitRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -153,7 +153,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/suhuTextView"
-        tools:text="Konversi ke suhu Fahrenheit : 132.8 F" />
+        tools:text="Hasil Konversi : 132.8°F" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
