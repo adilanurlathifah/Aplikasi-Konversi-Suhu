@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Konversi Satuan Suhu</string>
+    <string name="celcius">Celcius</string>
+    <string name="konversiSuhuIntro">Konversi suhu merupakan tools untuk menyatakan suhu pada pengukuran satuan skala tertentu agar bisa dibaca menggunakan satuan skala lainnya tanpa harus mengubah ukuran dari suhu tersebut</string>
+    <string name="konversiSuhuIntro2">Yuk tambah pengetahuanmu dengan mencoba konversi satuan Celcius ke satuan yang kamu Inginkan!</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Reamur">Reamur</string>
+    <string name="Kelvin">Kelvin</string>
+    <string name="konversiLabel">Konversi :</string>
+    <string name="suhuTextView">Suhu : 56</string>
+    <string name="hitungTextView">Konversi Suhu ke Fahrenheit : 132.8F</string>
+    <string name="buttonKonversi">Konversi</string>
+    <string name="buttonReset">Reset</string>
+</resources>
