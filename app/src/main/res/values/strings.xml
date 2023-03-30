@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Konversi Satuan Suhu</string>
-    <string name="celcius">Celcius</string>
     <string name="konversiSuhuIntro">Konversi suhu merupakan tools untuk menyatakan suhu pada pengukuran satuan skala tertentu agar bisa dibaca menggunakan satuan skala lainnya tanpa harus mengubah ukuran dari suhu tersebut</string>
     <string name="konversiSuhuIntro2">Yuk tambah pengetahuanmu dengan mencoba konversi satuan Celcius ke satuan yang kamu Inginkan!</string>
+    <string name="celcius">Celcius</string>
     <string name="Fahrenheit">Fahrenheit</string>
     <string name="Reamur">Reamur</string>
     <string name="Kelvin">Kelvin</string>
