@@ -1,5 +1,6 @@
 package org.d3if3143.assesment1
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.d3if3143.assesment1.databinding.ActivityMainBinding
@@ -12,10 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.buttonKonversi.setOnClickListener {
             konversiSuhu() }
-
         binding.buttonReset.setOnClickListener {
             resetKonversi() }
         }
@@ -25,16 +24,21 @@ class MainActivity : AppCompatActivity() {
         if(inputCelcius.isNotEmpty()) {
             binding.celciusInp.text = null
             binding.hitungTextView.text = null
+            binding.suhuTextView.text = null
             binding.radioGroup.clearCheck()
+
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun konversiSuhu() {
         val df = DecimalFormat("#.##")
         val inputCelcius = binding.celciusInp.text.toString()
         val result: String
 
         if(inputCelcius.isNotEmpty()) {
+            binding.suhuTextView.text = "Suhu Awal : $inputCelcius°C"
+
             val selectedRadioButtonId: Int =
                 binding.radioGroup.checkedRadioButtonId
 
