@@ -21,7 +21,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/nunito_sans"
         android:text="@string/konversiSuhuIntro"
-        android:textColor="#393737"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -39,19 +39,30 @@
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/nunito_sans"
         android:text="@string/konversiSuhuIntro2"
-        android:textColor="#393737"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/celcius_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/konversiSuhuIntro" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/celcius_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konversiSuhuIntro2"
+        tools:src="@drawable/_144658" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/celcius_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,9 +76,8 @@
             android:fontFamily="@font/nunito_sans"
             android:hint="@string/celcius"
             android:inputType="numberDecimal|number"
-            android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="16sp"
+            android:textSize="19sp"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +86,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/nunito_sans"
         android:text="@string/konversiLabel"
         android:textStyle="bold"
@@ -89,8 +99,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/konversiLabel"
@@ -98,8 +108,8 @@
 
         <RadioButton
             android:id="@+id/FahrenheitRadioButton"
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
             android:width="50dp"
             android:fontFamily="@font/nunito_sans"
@@ -109,8 +119,8 @@
 
         <RadioButton
             android:id="@+id/ReamurRadioButton"
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
             android:width="20dp"
             android:fontFamily="@font/nunito_sans"
@@ -120,8 +130,8 @@
 
         <RadioButton
             android:id="@+id/KelvinRadioButton"
-            android:layout_width="23dp"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
             android:width="50dp"
             android:fontFamily="@font/nunito_sans"
@@ -137,13 +147,15 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/nunito_sans"
         android:text="@string/buttonKonversi"
+        android:background="@drawable/rounded_button"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.297" />
+        app:layout_constraintVertical_bias="0.125" />
+
 
     <Button
         android:id="@+id/buttonReset"
@@ -153,12 +165,13 @@
         android:fontFamily="@font/nunito_sans"
         android:text="@string/buttonReset"
         android:textStyle="bold"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.296" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
         android:id="@+id/suhuTextView"
@@ -166,9 +179,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/nunito_sans"
         android:gravity="center"
-        android:textColor="#171616"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -182,15 +195,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="130dp"
         android:fontFamily="@font/nunito_sans"
         android:gravity="center"
-        android:textColor="#171616"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/suhuTextView"
+        app:layout_constraintVertical_bias="1.0"
         tools:text="Hasil Konversi : 132.8°F" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
